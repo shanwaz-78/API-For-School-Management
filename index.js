@@ -37,6 +37,7 @@ app.use(compression());
 
 // routes
 app.use("/api", routes.schoolRouter);
+app.use('/', (req, res) => console.log(`School Management API is working.`))
 
 // error handlers
 app.use(notFound);
